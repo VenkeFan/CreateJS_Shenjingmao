@@ -22,7 +22,7 @@ function Circle(){
 
 	this.setColor = function(color){
 		this.graphics.beginFill(color);
-		this.graphics.drawCircle(0, 0, 20);
+		this.graphics.drawCircle(0, 0, 25);
 		this.graphics.endFill();
 	}
 }
