@@ -11,7 +11,6 @@ var _stage = null;
 var _itemsInLine = 9; // 每行的个数
 var _sprite; // 精灵
 var _circleArray; // 存放所有圆的的二维数组
-var _bestOrientaion = MoveOrientationEnum.TOPLEFT;
 
 window.onload = function(){
     init();
@@ -98,7 +97,6 @@ function circleClick(event){
 // 获取精灵移动的路线
 function getMoveRoute(){
     var distanceArray = new Array(); // 各个方向可移动的距离集合
-    var escapeArray = new Array(); // 能够逃脱的路线集合
 
     // 左上
     var isCan = true; // 该前进路线是否能逃脱
